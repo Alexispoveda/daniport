@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 
 import profileData from "@/config/profile.json";
+import { getDictionary, hasLocale } from "@/lib/i18n";
 
 export const size = {
   width: 1200,
@@ -9,8 +10,15 @@ export const size = {
 
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+interface OpenGraphImageProps {
+  params: Promise<{ lang: string }>;
+}
+
+export default async function OpenGraphImage({ params }: OpenGraphImageProps) {
   const profile = profileData;
+  const { lang } = await params;
+  const locale = hasLocale(lang) ? lang : "en";
+  const dict = await getDictionary(locale);
 
   return new ImageResponse(
     (
@@ -37,14 +45,14 @@ export default function OpenGraphImage() {
             color: "#3b81b7",
           }}
         >
-          Daniella Castillo
+          {dict.seo.siteName}
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.04, maxWidth: 980 }}>
-            Redesigning Work, Empowering Change Today
+            {profile.bannerTitle[locale]}
           </div>
-          <div style={{ fontSize: 34, color: "#2b3f54" }}>{profile.headline.en}</div>
+          <div style={{ fontSize: 34, color: "#2b3f54" }}>{profile.headline[locale]}</div>
         </div>
       </div>
     ),

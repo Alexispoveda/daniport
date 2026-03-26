@@ -30,13 +30,13 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
       url: `${site.baseUrl}/${lang}/contact`,
       title: `${dict.seo.contactTitle} | ${profile.name}`,
       description: dict.seo.contactDescription,
-      images: ["/opengraph-image"],
+      images: [`/${lang}/opengraph-image`],
     },
     twitter: {
       card: "summary_large_image",
       title: `${dict.seo.contactTitle} | ${profile.name}`,
       description: dict.seo.contactDescription,
-      images: ["/twitter-image"],
+      images: [`/${lang}/twitter-image`],
     },
   };
 }

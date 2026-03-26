@@ -31,13 +31,13 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
       url: `${site.baseUrl}/${lang}`,
       title: `${dict.seo.homeTitle} | ${profile.name}`,
       description: dict.seo.homeDescription,
-      images: ["/opengraph-image"],
+      images: [`/${lang}/opengraph-image`],
     },
     twitter: {
       card: "summary_large_image",
       title: `${dict.seo.homeTitle} | ${profile.name}`,
       description: dict.seo.homeDescription,
-      images: ["/twitter-image"],
+      images: [`/${lang}/twitter-image`],
     },
   };
 }

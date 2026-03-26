@@ -35,13 +35,13 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
       url: `${site.baseUrl}/${lang}/about`,
       title: `${dict.seo.aboutTitle} | ${profile.name}`,
       description: dict.seo.aboutDescription,
-      images: ["/opengraph-image"],
+      images: [`/${lang}/opengraph-image`],
     },
     twitter: {
       card: "summary_large_image",
       title: `${dict.seo.aboutTitle} | ${profile.name}`,
       description: dict.seo.aboutDescription,
-      images: ["/twitter-image"],
+      images: [`/${lang}/twitter-image`],
     },
   };
 }

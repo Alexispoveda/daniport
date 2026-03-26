@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
       siteName: dict.seo.siteName,
       images: [
         {
-          url: "/opengraph-image",
+          url: `/${lang}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: profile.name,
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
       card: "summary_large_image",
       title: dict.seo.siteName,
       description: dict.seo.defaultDescription,
-      images: ["/twitter-image"],
+      images: [`/${lang}/twitter-image`],
     },
   };
 }

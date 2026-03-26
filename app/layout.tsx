@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: site.baseUrl,
     images: [
       {
-        url: "/opengraph-image",
+        url: "/en/opengraph-image",
         width: 1200,
         height: 630,
         alt: profile.name,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: profile.name,
     description:
       "Industrial Engineer and Psychologist focused on business transformation, process design, and sustainable growth.",
-    images: ["/twitter-image"],
+    images: ["/en/twitter-image"],
   },
 };
 
