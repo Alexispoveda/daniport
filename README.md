@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniella Castillo Portfolio
 
-## Getting Started
+Professional bilingual portfolio built with Next.js App Router.
 
-First, run the development server:
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript (strict)
+- Tailwind CSS 4
+- ESLint 9
+
+## Main Features
+
+- 3 pages: Home, About, Contact
+- Shared header and footer
+- EN/ES internationalization with locale-prefixed routes
+- JSON-driven content for easy CI/CD updates
+- SEO metadata per page + `robots.txt` + `sitemap.xml`
+- Responsive layout
+- Uses only the 3 provided image assets
+
+## Routes
+
+- `/` redirects to default locale (`/en`)
+- `/en`, `/en/about`, `/en/contact`
+- `/es`, `/es/about`, `/es/contact`
+
+Locale redirection is handled in `proxy.ts`.
+
+## Project Structure
+
+```text
+app/
+	[lang]/
+		about/page.tsx
+		contact/page.tsx
+		layout.tsx
+		page.tsx
+	assets/images/
+	globals.css
+	layout.tsx
+	page.tsx
+	robots.ts
+	sitemap.ts
+components/
+	common/
+	layout/
+	sections/
+config/
+	experiences.json
+	profile.json
+	site.json
+locales/
+	en.json
+	es.json
+lib/
+	i18n.ts
+	routes.ts
+	types.ts
+proxy.ts
+```
+
+## Content Management
+
+All editable text is configurable through JSON files.
+
+- Global profile and contact content: `config/profile.json`
+- Experience list: `config/experiences.json`
+- Site config (base URL and locales): `config/site.json`
+- UI labels and page copy by locale: `locales/en.json`, `locales/es.json`
+
+To update content, edit JSON files only. No component code changes should be required.
+
+## SEO
+
+- Base URL: `https://danicast.com` (from `config/site.json`)
+- Localized metadata via `app/[lang]/layout.tsx`
+- Route metadata in each page file
+- Search engine files:
+	- `app/robots.ts`
+	- `app/sitemap.ts`
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Lint:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Keep locale keys synchronized between `locales/en.json` and `locales/es.json`.
+- Keep text changes in JSON, not hardcoded in TSX.
+- Current default locale is `en`.

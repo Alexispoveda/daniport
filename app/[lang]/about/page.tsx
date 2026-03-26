@@ -4,17 +4,19 @@ import { notFound } from "next/navigation";
 
 import profileData from "@/config/profile.json";
 import experiencesData from "@/config/experiences.json";
+import siteData from "@/config/site.json";
 import portraitOne from "@/app/assets/images/Daniella-Rectangle.jpeg";
 import { Container } from "@/components/common/Container";
 import { ExperienceList } from "@/components/sections/ExperienceList";
 import { getDictionary, hasLocale } from "@/lib/i18n";
-import type { ExperienceItem, ProfileConfig } from "@/lib/types";
+import type { ExperienceItem, ProfileConfig, SiteConfig } from "@/lib/types";
 
 interface AboutPageProps {
   params: Promise<{ lang: string }>;
 }
 
 const profile = profileData as ProfileConfig;
+const site = siteData as SiteConfig;
 const experiences = experiencesData as ExperienceItem[];
 
 export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
@@ -29,6 +31,18 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
   return {
     title: dict.seo.aboutTitle,
     description: dict.seo.aboutDescription,
+    openGraph: {
+      url: `${site.baseUrl}/${lang}/about`,
+      title: `${dict.seo.aboutTitle} | ${profile.name}`,
+      description: dict.seo.aboutDescription,
+      images: ["/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${dict.seo.aboutTitle} | ${profile.name}`,
+      description: dict.seo.aboutDescription,
+      images: ["/twitter-image"],
+    },
   };
 }
 

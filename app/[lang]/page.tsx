@@ -2,16 +2,18 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import profileData from "@/config/profile.json";
+import siteData from "@/config/site.json";
 import { HomeAboutTeaser } from "@/components/sections/HomeAboutTeaser";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { getDictionary, hasLocale } from "@/lib/i18n";
-import type { ProfileConfig } from "@/lib/types";
+import type { ProfileConfig, SiteConfig } from "@/lib/types";
 
 interface HomePageProps {
   params: Promise<{ lang: string }>;
 }
 
 const profile = profileData as ProfileConfig;
+const site = siteData as SiteConfig;
 
 export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
   const { lang } = await params;
@@ -25,6 +27,18 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
   return {
     title: dict.seo.homeTitle,
     description: dict.seo.homeDescription,
+    openGraph: {
+      url: `${site.baseUrl}/${lang}`,
+      title: `${dict.seo.homeTitle} | ${profile.name}`,
+      description: dict.seo.homeDescription,
+      images: ["/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${dict.seo.homeTitle} | ${profile.name}`,
+      description: dict.seo.homeDescription,
+      images: ["/twitter-image"],
+    },
   };
 }
 

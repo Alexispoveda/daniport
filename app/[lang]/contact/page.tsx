@@ -2,15 +2,17 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import profileData from "@/config/profile.json";
+import siteData from "@/config/site.json";
 import { ContactDetails } from "@/components/sections/ContactDetails";
 import { getDictionary, hasLocale } from "@/lib/i18n";
-import type { ProfileConfig } from "@/lib/types";
+import type { ProfileConfig, SiteConfig } from "@/lib/types";
 
 interface ContactPageProps {
   params: Promise<{ lang: string }>;
 }
 
 const profile = profileData as ProfileConfig;
+const site = siteData as SiteConfig;
 
 export async function generateMetadata({ params }: ContactPageProps): Promise<Metadata> {
   const { lang } = await params;
@@ -24,6 +26,18 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
   return {
     title: dict.seo.contactTitle,
     description: dict.seo.contactDescription,
+    openGraph: {
+      url: `${site.baseUrl}/${lang}/contact`,
+      title: `${dict.seo.contactTitle} | ${profile.name}`,
+      description: dict.seo.contactDescription,
+      images: ["/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${dict.seo.contactTitle} | ${profile.name}`,
+      description: dict.seo.contactDescription,
+      images: ["/twitter-image"],
+    },
   };
 }
 
