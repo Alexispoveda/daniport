@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://danicast.com",
+  "defaultLocale": "en",
+  "locales": ["en", "es"]
+}

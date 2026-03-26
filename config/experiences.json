@@ -1,0 +1,56 @@
+[
+  {
+    "id": "exp-1",
+    "role": {
+      "en": "Senior Consultant",
+      "es": "Consultora Senior"
+    },
+    "company": "Deloitte",
+    "bullets": {
+      "en": [
+        "Placeholder: Led a transformation initiative across multiple teams with measurable efficiency impact.",
+        "Placeholder: Designed process governance and change enablement model for leadership adoption."
+      ],
+      "es": [
+        "Placeholder: Lideró una iniciativa de transformación en equipos múltiples con impacto medible en eficiencia.",
+        "Placeholder: Diseñó un modelo de gobernanza de procesos y adopción del cambio para liderazgo."
+      ]
+    }
+  },
+  {
+    "id": "exp-2",
+    "role": {
+      "en": "Business Consulting",
+      "es": "Consultoría de Negocios"
+    },
+    "company": "EY",
+    "bullets": {
+      "en": [
+        "Placeholder: Built operating model recommendations aligned with strategic growth priorities.",
+        "Placeholder: Supported cross-functional workshops to align stakeholders and execution plans."
+      ],
+      "es": [
+        "Placeholder: Desarrolló recomendaciones de modelo operativo alineadas con prioridades de crecimiento.",
+        "Placeholder: Apoyó talleres interfuncionales para alinear actores clave y planes de ejecución."
+      ]
+    }
+  },
+  {
+    "id": "exp-3",
+    "role": {
+      "en": "Headhunting Consultant",
+      "es": "Consultora de Headhunting"
+    },
+    "company": "Valor Humano Latinoamérica",
+    "bullets": {
+      "en": [
+        "Placeholder: Structured talent search workflows to improve candidate quality and time-to-hire.",
+        "Placeholder: Partnered with business leaders to define role success criteria and evaluation signals."
+      ],
+      "es": [
+        "Placeholder: Estructuró flujos de búsqueda de talento para mejorar calidad de candidatos y tiempo de contratación.",
+        "Placeholder: Colaboró con líderes de negocio para definir criterios de éxito y evaluación de roles."
+      ]
+    }
+  }
+]

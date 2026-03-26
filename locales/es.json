@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "brandShort": "DC",
+    "brandFull": "Daniella Castillo",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "actions": {
+    "about": "Leer más",
+    "contact": "Contactar",
+    "linkedin": "Ver LinkedIn"
+  },
+  "home": {
+    "heroEyebrow": "Portafolio de Transformación Empresarial",
+    "heroImageAlt": "Entorno de oficina",
+    "aboutTitle": "Sobre mí",
+    "aboutSubtitle": "Una perspectiva de sistemas guiada por el cambio centrado en personas."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "portraitAlt": "Retrato de Daniella Castillo",
+    "experienceTitle": "Experiencia"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Comencemos una conversación práctica.",
+    "portraitAlt": "Retrato de Daniella Castillo",
+    "overlayRole": "Transformación Empresarial",
+    "email": "Correo",
+    "phone": "Celular",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "basedIn": "Panamá"
+  },
+  "seo": {
+    "siteName": "Portafolio de Daniella Castillo",
+    "defaultDescription": "Ingeniera Industrial y Psicóloga enfocada en transformación empresarial, diseño de procesos y crecimiento sostenible.",
+    "homeTitle": "Inicio",
+    "homeDescription": "Rediseño del trabajo e impulso del cambio con transformación estructurada y ejecución centrada en personas.",
+    "aboutTitle": "Sobre mí",
+    "aboutDescription": "Conoce más sobre Daniella Castillo y su experiencia en transformación empresarial.",
+    "contactTitle": "Contacto",
+    "contactDescription": "Ponte en contacto para conversar sobre transformación, optimización de flujos y consultoría."
+  }
+}

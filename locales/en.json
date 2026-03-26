@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "brandShort": "DC",
+    "brandFull": "Daniella Castillo",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "actions": {
+    "about": "Read More",
+    "contact": "Contact",
+    "linkedin": "View LinkedIn"
+  },
+  "home": {
+    "heroEyebrow": "Business Transformation Portfolio",
+    "heroImageAlt": "Office environment",
+    "aboutTitle": "About Me",
+    "aboutSubtitle": "A systems perspective guided by people-first change."
+  },
+  "about": {
+    "title": "About",
+    "portraitAlt": "Portrait of Daniella Castillo",
+    "experienceTitle": "Experience"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let us start a practical conversation.",
+    "portraitAlt": "Portrait of Daniella Castillo",
+    "overlayRole": "Business Transformation",
+    "email": "Email",
+    "phone": "Cellphone",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "basedIn": "Panama"
+  },
+  "seo": {
+    "siteName": "Daniella Castillo Portfolio",
+    "defaultDescription": "Industrial Engineer and Psychologist focused on business transformation, process design, and sustainable growth.",
+    "homeTitle": "Home",
+    "homeDescription": "Redesigning work and empowering change with structured transformation and human-centered execution.",
+    "aboutTitle": "About",
+    "aboutDescription": "Learn more about Daniella Castillo and her experience in business transformation.",
+    "contactTitle": "Contact",
+    "contactDescription": "Reach out to discuss business transformation, workflow optimization, and consulting opportunities."
+  }
+}
