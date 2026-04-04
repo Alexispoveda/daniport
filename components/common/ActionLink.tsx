@@ -15,7 +15,7 @@ export function ActionLink({ href, children, variant = "primary" }: ActionLinkPr
       : "border border-[var(--color-line)] bg-white/75 text-[var(--color-ink)] hover:bg-white";
 
   return (
-    <Link href={href} className={`${base} ${styles}`}>
+    <Link href={href} className={`${base} ${styles}`} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined}>
       {children}
     </Link>
   );

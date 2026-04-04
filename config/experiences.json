@@ -2,36 +2,36 @@
   {
     "id": "exp-1",
     "role": {
-      "en": "Senior Consultant",
-      "es": "Consultora Senior"
+      "en": "Senior Consultant | Industry Solutions",
+      "es": "Consultora Senior | Soluciones de Negocios"
     },
     "company": "Deloitte",
     "bullets": {
       "en": [
-        "Placeholder: Led a transformation initiative across multiple teams with measurable efficiency impact.",
-        "Placeholder: Designed process governance and change enablement model for leadership adoption."
+        "Collaborate with cross-functional teams to assess client operations, translating business needs into structured recommendations that drive efficiency, scalability, and value creation.",
+        "Support acquisitions and operational transformation projects by analyzing key business processes, identifying risks, and generating actionable insights to inform strategic decision-making."
       ],
       "es": [
-        "Placeholder: Lideró una iniciativa de transformación en equipos múltiples con impacto medible en eficiencia.",
-        "Placeholder: Diseñó un modelo de gobernanza de procesos y adopción del cambio para liderazgo."
+        "Colaboro con equipos multidisciplinarios en la evaluación de operaciones, traduciendo necesidades del negocio en recomendaciones estructuradas que impulsan eficiencia, escalabilidad y creación de valor.",
+        "Participo en proyectos para adquisiciones y transformación operativa, analizando procesos clave, identificando riesgos y aportando criterios que respaldan la toma de decisiones estratégicas."
       ]
     }
   },
   {
     "id": "exp-2",
     "role": {
-      "en": "Business Consulting",
-      "es": "Consultoría de Negocios"
+      "en": "Consultant | Business Transformation",
+      "es": "Consultora | Transformación Empresarial"
     },
     "company": "EY",
     "bullets": {
       "en": [
-        "Placeholder: Built operating model recommendations aligned with strategic growth priorities.",
-        "Placeholder: Supported cross-functional workshops to align stakeholders and execution plans."
+        "Contributed in high-impact strategic initiatives, working alongside multiple teams to support planning, execution, and change management.",
+        "Collaborated in the development of an operative model for strategic technology procurement, helping defining workflows, decision frameworks, and governance structure to improve efficiency and effectiveness."
       ],
       "es": [
-        "Placeholder: Desarrolló recomendaciones de modelo operativo alineadas con prioridades de crecimiento.",
-        "Placeholder: Apoyó talleres interfuncionales para alinear actores clave y planes de ejecución."
+        "Contribuí en iniciativas estratégicas de alto impacto, trabajando junto a múltiples equipos para apoyar la planificación, ejecución y gestión del cambio.",
+        "Colaboré en el desarrollo de un modelo operativo para la adquisición estratégica de tecnología, ayudando a definir flujos de trabajo, marcos de decisión y estructura de gobernanza para mejorar la eficiencia y efectividad." 
       ]
     }
   },
@@ -44,12 +44,12 @@
     "company": "Valor Humano Latinoamérica",
     "bullets": {
       "en": [
-        "Placeholder: Structured talent search workflows to improve candidate quality and time-to-hire.",
-        "Placeholder: Partnered with business leaders to define role success criteria and evaluation signals."
+        "Lead end-to-end headhunting processes by identifying client needs, conducting in-depth candidate assessments, and building strong relationships with key stakeholders to deliver high-quality talent.",
+        "Drive strategic talent acquisition initiatives through market analysis, industry insights, and continuous improvement projects that enhance value proposition, efficiency, and user experience."
       ],
       "es": [
-        "Placeholder: Estructuró flujos de búsqueda de talento para mejorar calidad de candidatos y tiempo de contratación.",
-        "Placeholder: Colaboró con líderes de negocio para definir criterios de éxito y evaluación de roles."
+        "Lideré procesos de selección ejecutiva de principio a fin, entendiendo a fondo las necesidades del cliente, evaluando talento de forma integral y construyendo relaciones estratégicas para asegurar resultados de alto impacto.",
+        "Impulsé la atracción de talento con una visión estratégica, basada en análisis de mercado y tendencias, desarrollando iniciativas que fortalecen la propuesta de valor y optimizan la eficiencia y la experiencia del proceso."
       ]
     }
   }

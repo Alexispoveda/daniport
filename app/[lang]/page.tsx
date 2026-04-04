@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 
-import profileData from "@/config/profile.json";
 import siteData from "@/config/site.json";
 import { HomeAboutTeaser } from "@/components/sections/HomeAboutTeaser";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { getDictionary, hasLocale } from "@/lib/i18n";
-import type { ProfileConfig, SiteConfig } from "@/lib/types";
+import { getProfileConfig } from "@/lib/profile";
+import type { SiteConfig } from "@/lib/types";
 
 interface HomePageProps {
   params: Promise<{ lang: string }>;
 }
 
-const profile = profileData as ProfileConfig;
 const site = siteData as SiteConfig;
 
 export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
   const { lang } = await params;
+  const profile = getProfileConfig();
 
   if (!hasLocale(lang)) {
     return {};
@@ -48,6 +49,10 @@ export default async function HomePage({ params }: HomePageProps) {
   if (!hasLocale(lang)) {
     notFound();
   }
+
+  await connection();
+
+  const profile = getProfileConfig();
 
   const dict = await getDictionary(lang);
 

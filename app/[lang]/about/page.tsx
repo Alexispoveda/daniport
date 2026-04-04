@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 
-import profileData from "@/config/profile.json";
 import experiencesData from "@/config/experiences.json";
 import siteData from "@/config/site.json";
 import portraitOne from "@/app/assets/images/Daniella-Rectangle.jpeg";
 import { Container } from "@/components/common/Container";
 import { ExperienceList } from "@/components/sections/ExperienceList";
 import { getDictionary, hasLocale } from "@/lib/i18n";
-import type { ExperienceItem, ProfileConfig, SiteConfig } from "@/lib/types";
+import { getProfileConfig } from "@/lib/profile";
+import type { ExperienceItem, SiteConfig } from "@/lib/types";
 
 interface AboutPageProps {
   params: Promise<{ lang: string }>;
 }
 
-const profile = profileData as ProfileConfig;
 const site = siteData as SiteConfig;
 const experiences = experiencesData as ExperienceItem[];
 
 export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
   const { lang } = await params;
+  const profile = getProfileConfig();
 
   if (!hasLocale(lang)) {
     return {};
@@ -52,6 +53,10 @@ export default async function AboutPage({ params }: AboutPageProps) {
   if (!hasLocale(lang)) {
     notFound();
   }
+
+  await connection();
+
+  const profile = getProfileConfig();
 
   const dict = await getDictionary(lang);
   const paragraphs = profile.longAbout[lang].split("\n\n");

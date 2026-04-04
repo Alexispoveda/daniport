@@ -10,6 +10,7 @@ export interface ContactChannels {
 
 export interface ProfileConfig {
   name: string;
+  experienceStartYear: number;
   bannerTitle: LocalizedText;
   shortAbout: LocalizedText;
   longAbout: LocalizedText;

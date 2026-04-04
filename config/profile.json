@@ -1,28 +1,29 @@
 {
   "name": "Daniella Castillo Flores",
+  "experienceStartYear": 2021,
   "headline": {
     "en": "Industrial Engineer and Psychologist",
     "es": "Ingeniera Industrial y Psicóloga"
   },
   "bannerTitle": {
-    "en": "Redesigning work, empowering change today",
-    "es": "Rediseñando el trabajo, impulsando el cambio hoy"
+    "en": "Driving value, reshaping organizations today",
+    "es": "Generando valor, transformando organizaciones hoy"
   },
   "shortAbout": {
-    "en": "Industrial Engineer and Psychologist with 4+ years of experience helping organizations transform. I combine structured process design with human insight to improve efficiency, adaptability, and sustainable growth.",
-    "es": "Ingeniera Industrial y Psicóloga con más de 4 años de experiencia ayudando a organizaciones a transformarse. Combino diseño de procesos estructurados con comprensión humana para mejorar eficiencia, adaptabilidad y crecimiento sostenible."
+    "en": "Industrial Engineer and Psychologist with {{experienceYears}}+ years of experience helping organizations transform. I combine structured process design with human insight to improve efficiency, adaptability, and sustainable growth.",
+    "es": "Ingeniera Industrial y Psicóloga con más de {{experienceYears}} años de experiencia impulsando a organizaciones a transformarse. Combino diseño de procesos estructurados con comprensión humana para mejorar eficiencia, adaptabilidad y crecimiento sostenible."
   },
   "longAbout": {
-    "en": "I am an Industrial Engineer with a background in Psychology, bringing over four years of experience in business transformation. My journey has been shaped by working with diverse teams and adapting to fast-changing environments, where I have learned to balance technical precision with human understanding.\n\nI specialize in designing structured processes that improve efficiency and productivity, while also recognizing the importance of people in driving meaningful change. By combining analytical rigor with insights into human behavior, I help organizations unlock innovation, strengthen collaboration, and achieve sustainable growth.\n\nAt the core, I see transformation not just as a matter of systems and workflows, but as an opportunity to empower individuals and teams to thrive.",
-    "es": "Soy Ingeniera Industrial con formación en Psicología y más de cuatro años de experiencia en transformación empresarial. Mi camino profesional se ha construido trabajando con equipos diversos y adaptándome a entornos de cambio acelerado, donde he aprendido a equilibrar precisión técnica con entendimiento humano.\n\nMe especializo en diseñar procesos estructurados que mejoran la eficiencia y la productividad, sin perder de vista el rol de las personas para impulsar cambios significativos. Al combinar rigor analítico con conocimiento del comportamiento humano, ayudo a las organizaciones a impulsar innovación, fortalecer la colaboración y lograr crecimiento sostenible.\n\nEn esencia, entiendo la transformación no solo como sistemas y flujos de trabajo, sino como una oportunidad para empoderar a personas y equipos para prosperar."
+    "en": "Industrial Engineer with a background in Psychology, bringing over {{experienceYears}} years of experience in business transformation. My journey has been shaped by working with diverse teams and adapting to fast-changing environments, where I have learned to balance technical precision with human understanding.\n\nI specialize in designing structured processes that improve efficiency and productivity, while also recognizing the importance of people in driving meaningful change. By combining analytical rigor with insights into human behavior, I help organizations unlock innovation, strengthen collaboration, and achieve sustainable growth.\n\nAt the core, I see transformation not just as a matter of systems and workflows, but as an opportunity to empower individuals and teams to thrive.",
+    "es": "Ingeniera Industrial con formación en Psicología y más de {{experienceYears}} años de experiencia en transformación empresarial. Mi camino profesional se ha construido trabajando con equipos diversos y adaptándome a entornos de cambio acelerado, donde he aprendido a equilibrar precisión técnica con entendimiento humano.\n\nMe especializo en diseñar procesos estructurados que mejoran la eficiencia y la productividad, sin perder de vista el rol de las personas para impulsar cambios significativos. Al combinar rigor analítico con valor humano, ayudo a las organizaciones a impulsar innovación, fortalecer la colaboración y lograr crecimiento sostenible.\n\nEn esencia, entiendo la transformación no solo como sistemas y flujos de trabajo, sino como una oportunidad para empoderar a personas y equipos para prosperar."
   },
   "contactParagraph": {
-    "en": "I welcome inquiries about business transformation, workflow optimization, and consulting opportunities. Whether you are looking to improve efficiency, align teams, or explore new strategies, I am here to help. After reaching out, you can expect a thoughtful response and a collaborative approach tailored to your needs.",
-    "es": "Recibo con gusto consultas sobre transformación empresarial, optimización de flujos de trabajo y oportunidades de consultoría. Si buscas mejorar eficiencia, alinear equipos o explorar nuevas estrategias, estoy aquí para ayudarte. Después de contactarme, puedes esperar una respuesta cuidadosa y un enfoque colaborativo adaptado a tus necesidades."
+    "en": "I welcome inquiries about business transformation, workflow optimization, and consulting opportunities. If you are looking to boost efficiency, align teams, or test new strategies, I am here to connect and collaborate on the next steps.",
+    "es": "Estoy abierta a consultas sobre transformación empresarial, optimización de flujos de trabajo y oportunidades de consultoría. Si buscas impulsar la eficiencia, alinear equipos o probar nuevas estrategias, estoy aquí para conectar y colaborar en los próximos pasos."
   },
   "contact": {
     "email": "me@danicast.com",
     "phone": "(507) 6614-0343",
-    "linkedin": "https://www.linkedin.com/in/daniella-castillo-flores-93109b1b6/"
+    "linkedin": "https://www.linkedin.com/in/daniellacastillo/"
   }
 }
